@@ -10,7 +10,7 @@ export default class Welcome extends Component {
         <View style={styles.container}>
           <Image
             style={styles.logo}
-            source={require('../../assets/images/logo.png')}
+            source={require('../../assets/dummy/logo.png')}
           />
         </View>
         <Text>

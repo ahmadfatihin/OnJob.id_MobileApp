@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Text, StyleSheet, View, Image} from 'react-native';
 import {colors} from '../../utils';
-import {Logo} from '../../assets';
 
 export default class Welcome extends Component {
   render() {
@@ -13,7 +12,7 @@ export default class Welcome extends Component {
             source={require('../../assets/dummy/logo.png')}
           />
         </View>
-        <Text>
+        <Text style={{fontSize: 23, lineHeight: 21, padding: 25}}>
           OnJob.id adalah aplikasi berbagi kerja serabutan, sebuah alternatif
           solusi utk memberdayakan pengangguran di Indonesia utk mendapatkan
           lapangan kerja yg luas, penghasilan yg cukup, dan program pendidikan

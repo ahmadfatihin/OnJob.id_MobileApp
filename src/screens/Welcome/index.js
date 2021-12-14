@@ -16,7 +16,7 @@ export default class Welcome extends Component {
         <View>
           <Text style={styles.title}>Selamat Datang di Onjob.ID</Text>
         </View>
-        <Text style={styles.text}>
+        <Text style={styles.caption}>
           OnJob.id adalah aplikasi berbagi kerja serabutan, sebuah alternatif
           solusi utk memberdayakan pengangguran di Indonesia utk mendapatkan
           lapangan kerja yg luas, penghasilan yg cukup, dan program pendidikan
@@ -25,6 +25,7 @@ export default class Welcome extends Component {
         </Text>
         <View>
           <Button title="Masuk" />
+          <View style={{height: 16}} />
           <Button type="grey" title="Daftar" />
         </View>
       </View>
@@ -48,14 +49,15 @@ const styles = StyleSheet.create({
     paddingTop: 20,
     color: colors.primary,
     fontSize: 23,
-    fontWeight: '700',
     textAlign: 'center',
+    fontFamily: 'Poppins-Bold',
   },
-  text: {
+  caption: {
     paddingBottom: 20,
     textAlign: 'justify',
     color: colors.black,
     fontSize: 16,
     fontWeight: '500',
+    fontFamily: 'Poppins-Medium',
   },
 });

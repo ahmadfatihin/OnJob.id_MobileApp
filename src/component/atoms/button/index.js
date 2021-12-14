@@ -4,7 +4,7 @@ import {colors} from '../../../utils';
 
 const Button = ({type, title}) => {
   return (
-    <View style={styles.container}>
+    <View style={styles.container(type)}>
       <Text style={styles.text}>{title}</Text>
     </View>
   );
@@ -13,11 +13,11 @@ const Button = ({type, title}) => {
 export default Button;
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: colors.primary,
+  container: type => ({
+    backgroundColor: type === 'grey' ? colors.grey : colors.primary,
     paddingVertical: 10,
     borderRadius: 15,
-  },
+  }),
   text: {
     color: colors.white,
     fontSize: 18,

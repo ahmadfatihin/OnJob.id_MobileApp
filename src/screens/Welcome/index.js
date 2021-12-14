@@ -25,7 +25,7 @@ export default class Welcome extends Component {
         </Text>
         <View>
           <Button title="Masuk" />
-          <Button title="Daftar" />
+          <Button type="grey" title="Daftar" />
         </View>
       </View>
     );

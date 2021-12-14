@@ -6,4 +6,5 @@ export const colors = {
   red: '#E14040',
   yellow: '#FFF6D5',
   border: '#C4C4C4',
+  black: '#000000',
 };

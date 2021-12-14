@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Text, StyleSheet, View, Image} from 'react-native';
+import {Button} from '../../component';
 import {colors} from '../../utils';
 
 export default class Welcome extends Component {
@@ -12,13 +13,14 @@ export default class Welcome extends Component {
             source={require('../../assets/dummy/logo.png')}
           />
         </View>
-        <Text style={{fontSize: 23, lineHeight: 21, padding: 25}}>
+        <Text style={styles.text}>
           OnJob.id adalah aplikasi berbagi kerja serabutan, sebuah alternatif
           solusi utk memberdayakan pengangguran di Indonesia utk mendapatkan
           lapangan kerja yg luas, penghasilan yg cukup, dan program pendidikan
           keahlian yg baik, agar kelak bisa menjadi tenaga ahli profesional yg
           mandiri sbg bekal kehidupan yg lebih baik di masa depan
         </Text>
+        <Button />
       </View>
     );
   }
@@ -27,18 +29,18 @@ export default class Welcome extends Component {
 const styles = StyleSheet.create({
   pages: {
     backgroundColor: colors.white,
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  top: {
-    height: '30%',
-    width: '30%',
-    alignItems: 'center',
-    justifyContent: 'center',
+    padding: 40,
   },
   logo: {
-    height: 150,
-    width: 150,
+    paddingTop: 40,
+    paddingBottom: 40,
+    alignSelf: 'center',
+    height: 200,
+    width: 200,
+  },
+  text: {
+    paddingTop: 40,
+    textAlign: 'justify',
+    color: colors.black,
   },
 });

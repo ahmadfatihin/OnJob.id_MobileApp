@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Text, StyleSheet, View, Image} from 'react-native';
-import {Button} from '../../component';
+import {Button, Spacing} from '../../component';
 import {colors} from '../../utils';
 
 export default class Welcome extends Component {
@@ -25,7 +25,7 @@ export default class Welcome extends Component {
         </Text>
         <View>
           <Button title="Masuk" />
-          <View style={{height: 16}} />
+          <Spacing height={14} />
           <Button type="grey" title="Daftar" />
         </View>
       </View>
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Bold',
   },
   caption: {
-    paddingBottom: 20,
+    paddingBottom: 15,
     textAlign: 'justify',
     color: colors.black,
     fontSize: 16,

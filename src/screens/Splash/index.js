@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Text, StyleSheet, View} from 'react-native';
-import {Onjob} from '../../assets';
+import {StyleSheet, View} from 'react-native';
+import {OnjobWhite} from '../../assets';
 import {colors} from '../../utils';
 
 export default class Splash extends Component {
@@ -14,7 +14,7 @@ export default class Splash extends Component {
     return (
       <View style={styles.pages}>
         <View style={styles.images}>
-          <Onjob />
+          <OnjobWhite />
         </View>
       </View>
     );

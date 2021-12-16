@@ -5,6 +5,7 @@ import {colors} from '../../../utils';
 const Input = () => {
   return (
     <View>
+      <Text style={styles.label}>Label</Text>
       <TextInput style={styles.input} />
     </View>
   );
@@ -18,5 +19,10 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: 5,
     padding: 10,
+  },
+  label: {
+    fontSize: 14,
+    color: colors.grey,
+    marginBottom: 5,
   },
 });

@@ -9,7 +9,9 @@ const Login = () => {
     <View style={styles.pages}>
       <Onjob style={styles.onjob} />
       <Text>Test</Text>
-      <Input />
+      <Input Label={'Full Name'} />
+      <Input Label={'Email Adress'} />
+      <Input Label={'Password'} />
       <Link />
       <Button title={'Sign In'} />
       <Link />

@@ -2,10 +2,10 @@ import React from 'react';
 import {StyleSheet, Text, TextInput, View} from 'react-native';
 import {colors} from '../../../utils';
 
-const Input = () => {
+const Input = ({Label}) => {
   return (
     <View>
-      <Text style={styles.label}>Label</Text>
+      <Text style={styles.label}>{Label}</Text>
       <TextInput style={styles.input} />
     </View>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {Onjob} from '../../assets';
-import {Input} from '../../component/atoms';
+import {Input, Link} from '../../component/atoms';
 
 const Login = () => {
   return (
@@ -9,6 +9,7 @@ const Login = () => {
       <Onjob />
       <Text>Test</Text>
       <Input />
+      <Link />
     </View>
   );
 };

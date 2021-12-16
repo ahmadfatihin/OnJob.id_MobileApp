@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   container: type => ({
     backgroundColor: type === 'grey' ? colors.grey : colors.primary,
     paddingVertical: 10,
-    borderRadius: 15,
+    borderRadius: 13,
   }),
   text: {
     color: colors.white,

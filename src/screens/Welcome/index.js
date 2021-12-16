@@ -36,7 +36,8 @@ export default Welcome;
 const styles = StyleSheet.create({
   pages: {
     backgroundColor: colors.white,
-    padding: 40,
+    padding: 30,
+    paddingBottom: 35,
     flex: 1,
     justifyContent: 'space-between',
   },

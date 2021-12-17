@@ -1,10 +1,10 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
-const Link = () => {
+const Link = ({title, size, align}) => {
   return (
     <View>
-      <Text style={styles.link}>Link Component</Text>
+      <Text style={styles.link(size, align)}>{title}</Text>
     </View>
   );
 };
@@ -12,9 +12,10 @@ const Link = () => {
 export default Link;
 
 const styles = StyleSheet.create({
-  link: {
-    fontSize: 14,
+  link: (size, align) => ({
+    fontSize: size,
     fontFamily: 'Poppins-Medium',
     textDecorationLine: 'underline',
-  },
+    textAlign: align,
+  }),
 });

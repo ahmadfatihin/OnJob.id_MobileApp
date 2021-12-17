@@ -13,10 +13,11 @@ const Login = () => {
       <Input Label={'Email Adress'} />
       <Spacing height={14} />
       <Input Label={'Password'} />
-      <Link />
+      <Link title={'Lupa Password'} size={13} />
       <Spacing height={20} />
       <Button title={'Sign In'} />
-      <Link />
+      <Spacing height={20} />
+      <Link title={'Buat Akun Baru'} size={17} align={'center'} />
     </View>
   );
 };
@@ -28,7 +29,6 @@ const styles = StyleSheet.create({
     padding: 25,
     flex: 1,
     backgroundColor: colors.white,
-    fontFamily: 'Poppins-Medium',
   },
   onjob: {
     alignSelf: 'center',

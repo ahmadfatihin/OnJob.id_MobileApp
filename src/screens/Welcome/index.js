@@ -25,7 +25,11 @@ const Welcome = ({navigation}) => {
       <View>
         <Button title="Masuk" onPress={() => navigation.navigate('Login')} />
         <Spacing height={14} />
-        <Button type="grey" title="Daftar" />
+        <Button
+          type="grey"
+          title="Daftar"
+          onPress={() => navigation.navigate('Register')}
+        />
       </View>
     </View>
   );

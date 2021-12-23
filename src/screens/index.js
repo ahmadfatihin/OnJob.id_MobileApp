@@ -3,5 +3,6 @@ import Splash from './Splash';
 import Welcome from './Welcome';
 import Login from './Login';
 import Register from './Register';
+import UploadPhoto from './UploadPhoto';
 
-export {Home, Splash, Welcome, Login, Register};
+export {Home, Splash, Welcome, Login, Register, UploadPhoto};

@@ -16,7 +16,10 @@ const Register = ({navigation}) => {
         <Spacing height={14} />
         <Input Label={'Password'} />
         <Spacing height={20} />
-        <Button title={'Continue'} />
+        <Button
+          title={'Continue'}
+          onPress={() => navigation.navigate('UploadPhoto')}
+        />
       </View>
     </View>
   );

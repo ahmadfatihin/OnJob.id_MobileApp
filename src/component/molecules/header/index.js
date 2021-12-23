@@ -4,12 +4,12 @@ import {Button, Spacing} from '../..';
 import {ArrowLeft} from '../../../assets/icons';
 import {colors} from '../../../utils';
 
-const Header = onPress => {
+const Header = ({onPress}) => {
   return (
     <View style={styles.container}>
       {/* <ArrowLeft /> */}
       <Button type="icon-only" onPress={onPress} icon={'arrow-back'} />
-      <Text style={styles.text}>Header Component</Text>
+      <Text style={styles.text}>Register</Text>
       <Spacing width={24} />
     </View>
   );

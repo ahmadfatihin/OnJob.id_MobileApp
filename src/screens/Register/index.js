@@ -3,10 +3,10 @@ import {StyleSheet, Text, View} from 'react-native';
 import {Input, Spacing, Link, Button, Header} from '../../component';
 import {colors} from '../../utils';
 
-const Register = () => {
+const Register = ({navigation}) => {
   return (
     <View style={styles.page}>
-      <Header onPress={() => alert('hello')} />
+      <Header onPress={() => navigation.goBack()} />
       <View style={styles.content}>
         <Input Label={'Full Name'} />
         <Spacing height={14} />

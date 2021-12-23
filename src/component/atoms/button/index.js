@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import {colors} from '../../../utils';
+import {colors, fonts} from '../../../utils';
 import IconOnly from './iconOnly';
 
 const Button = ({type, title, onPress, icon}) => {
@@ -26,6 +26,6 @@ const styles = StyleSheet.create({
     color: colors.white,
     fontSize: 18,
     textAlign: 'center',
-    fontFamily: 'Poppins-SemiBold',
+    fontFamily: fonts.primary[600],
   },
 });

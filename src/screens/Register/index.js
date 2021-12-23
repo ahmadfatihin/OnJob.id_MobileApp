@@ -1,6 +1,6 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
-import {Input, Spacing, Link, Button, Header} from '../../component';
+import {StyleSheet, View} from 'react-native';
+import {Button, Header, Input, Spacing} from '../../component';
 import {colors} from '../../utils';
 
 const Register = ({navigation}) => {

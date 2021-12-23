@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Text, StyleSheet, View, Image} from 'react-native';
 import {Button, Spacing} from '../../component';
-import {colors} from '../../utils';
+import {colors, fonts} from '../../utils';
 
 const Welcome = ({navigation}) => {
   return (
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     color: colors.primary,
     fontSize: 23,
     textAlign: 'center',
-    fontFamily: 'Poppins-Bold',
+    fontFamily: fonts.primary[600],
   },
   caption: {
     paddingBottom: 15,
@@ -63,6 +63,6 @@ const styles = StyleSheet.create({
     color: colors.black,
     fontSize: 16,
     fontWeight: '500',
-    fontFamily: 'Poppins-Medium',
+    fontFamily: fonts.primary[500],
   },
 });

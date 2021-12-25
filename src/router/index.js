@@ -1,6 +1,7 @@
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
+import {BottomNav} from '../component';
 import {
   Home,
   Order,
@@ -18,7 +19,7 @@ const Tab = createBottomTabNavigator();
 
 function MainApp() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator tabBar={props => <BottomNav {...props} />}>
       <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Order" component={Order} />
       <Tab.Screen name="Chat" component={Chat} />

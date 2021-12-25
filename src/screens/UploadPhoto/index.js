@@ -4,10 +4,10 @@ import {IconAddPhoto, IconRemovePhoto, NullPhoto} from '../../assets';
 import {Button, Header} from '../../component';
 import {colors, fonts} from '../../utils';
 
-const UploadPhoto = () => {
+const UploadPhoto = ({navigation}) => {
   return (
     <View style={styles.page}>
-      <Header />
+      <Header onPress={() => navigation.goBack()} title="Upload Photo" />
       <View style={styles.content}>
         <View style={styles.profile}>
           <View style={styles.avatarWrapper}>

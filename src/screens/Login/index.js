@@ -4,7 +4,7 @@ import {Onjob} from '../../assets';
 import {Button, Input, Link, Spacing} from '../../component/atoms';
 import {colors} from '../../utils';
 
-const Login = () => {
+const Login = ({navigation}) => {
   return (
     <View style={styles.pages}>
       <Onjob style={styles.onjob} />
@@ -15,7 +15,7 @@ const Login = () => {
       <Input Label={'Password'} />
       <Link title={'Lupa Password'} size={13} />
       <Spacing height={20} />
-      <Button title={'Sign In'} />
+      <Button title={'Sign In'} onPress={() => navigation.replace('MainApp')} />
       <Spacing height={20} />
       <Link title={'Buat Akun Baru'} size={17} align={'center'} />
     </View>

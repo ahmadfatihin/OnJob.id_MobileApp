@@ -1,10 +1,11 @@
 import React from 'react';
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import {TabItem} from '../..';
+import {colors} from '../../../utils';
 
 const BottomNav = ({state, descriptors, navigation}) => {
   return (
-    <View style={{flexDirection: 'row'}}>
+    <View style={styles.container}>
       {state.routes.map((route, index) => {
         const {options} = descriptors[route.key];
         const label =
@@ -37,7 +38,7 @@ const BottomNav = ({state, descriptors, navigation}) => {
         };
 
         return (
-          <TabItem />
+          <TabItem title={label} />
           // <TouchableOpacity
           //   accessibilityRole="button"
           //   accessibilityState={isFocused ? {selected: true} : {}}
@@ -56,4 +57,12 @@ const BottomNav = ({state, descriptors, navigation}) => {
 
 export default BottomNav;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 53,
+    paddingVertical: 12,
+    backgroundColor: colors.primary,
+  },
+});

@@ -1,6 +1,6 @@
-import Button from './button';
-import Spacing from './spacing';
-import Input from './input';
-import Link from './link';
+import Button from './Button';
+import Spacing from './Spacing';
+import Input from './Input';
+import Link from './Link';
 
 export {Button, Spacing, Input, Link};

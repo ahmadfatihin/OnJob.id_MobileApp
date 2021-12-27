@@ -3,12 +3,12 @@ import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import {
   IconHome,
   IconHomeAktif,
-  IconChatActive,
   IconChat,
   IconOrder,
   IconOrderAktif,
   IconProfile,
   IconProfileAktif,
+  IconChatAktif,
 } from '../../../assets';
 import {colors, fonts} from '../../../utils';
 
@@ -18,7 +18,7 @@ const TabItem = ({title, active, onPress, onLongPress}) => {
       return active ? <IconHomeAktif /> : <IconHome />;
     }
     if (title === 'Chat') {
-      return active ? <IconChatActive /> : <IconChat />;
+      return active ? <IconChatAktif /> : <IconChat />;
     }
     if (title === 'Order') {
       return active ? <IconOrderAktif /> : <IconOrder />;

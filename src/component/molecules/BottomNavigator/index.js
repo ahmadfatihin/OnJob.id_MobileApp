@@ -38,7 +38,7 @@ const BottomNav = ({state, descriptors, navigation}) => {
         };
 
         return (
-          <TabItem title={label} />
+          <TabItem title={label} active={isFocused} />
           // <TouchableOpacity
           //   accessibilityRole="button"
           //   accessibilityState={isFocused ? {selected: true} : {}}

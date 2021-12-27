@@ -16,8 +16,8 @@ export const colors = {
   text: {
     primary: '#FFFFFF',
     secondary: '#112340',
-    menuInactive: '#495A75',
-    menuActive: '#587CF4',
+    menuInactive: '#945BF2',
+    menuActive: '#FFFFFF',
     subTitle: '#8092AF',
   },
 };

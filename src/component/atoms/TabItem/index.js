@@ -33,7 +33,9 @@ const TabItem = ({title, active, onPress, onLongPress}) => {
       style={styles.container}
       onPress={onPress}
       onLongPress={onLongPress}>
-      <Icon />
+      <View style={styles.icon}>
+        <Icon />
+      </View>
       <Text style={styles.text(active)}>{title}</Text>
     </TouchableOpacity>
   );
@@ -43,6 +45,12 @@ export default TabItem;
 
 const styles = StyleSheet.create({
   container: {alignItems: 'center'},
+  icon: {
+    width: 30,
+    height: 30,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   text: active => ({
     fontSize: 10,
     color: active ? colors.text.menuActive : colors.text.menuInactive,

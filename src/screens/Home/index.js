@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {HomeProfile, MenuCategory} from '../../component';
+import {HomeProfile, MenuCategory, NewsItem} from '../../component';
 
 const Home = () => {
   return (
@@ -11,6 +11,9 @@ const Home = () => {
       <MenuCategory />
       <MenuCategory />
       <MenuCategory />
+
+      <NewsItem />
+      <NewsItem />
     </View>
   );
 };

@@ -4,7 +4,7 @@ import {Beliin} from '../../../assets';
 
 const MenuCategory = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Image source={Beliin} />
       <Text>Menu Category</Text>
     </View>
@@ -13,4 +13,9 @@ const MenuCategory = () => {
 
 export default MenuCategory;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    padding: 12,
+    alignSelf: 'flex-start',
+  },
+});

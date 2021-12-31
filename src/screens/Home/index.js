@@ -7,10 +7,12 @@ const Home = () => {
     <View>
       <HomeProfile />
       <Text></Text>
-      <MenuCategory />
-      <MenuCategory />
-      <MenuCategory />
-      <MenuCategory />
+      <View style={styles.category}>
+        <MenuCategory />
+        <MenuCategory />
+        <MenuCategory />
+        <MenuCategory />
+      </View>
 
       <NewsItem />
       <NewsItem />
@@ -20,4 +22,8 @@ const Home = () => {
 
 export default Home;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  category: {
+    flexDirection: 'row',
+  },
+});

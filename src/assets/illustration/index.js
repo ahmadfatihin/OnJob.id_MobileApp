@@ -8,7 +8,7 @@ import Beliin from './beliin.png';
 import Cariin from './cariin.png';
 import Packingin from './packingin.png';
 import Sebarin from './sebarin.png';
-import Tukerin from '/tukerin.png';
+import Tukerin from './tukerin.png';
 
 export {
   Onjob,

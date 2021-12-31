@@ -1,10 +1,12 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, View} from 'react-native';
+import {Beliin} from '../../../assets';
 
 const MenuCategory = () => {
   return (
     <View>
-      <Text>MenuCategory</Text>
+      <Image source={Beliin} />
+      <Text>Menu Category</Text>
     </View>
   );
 };

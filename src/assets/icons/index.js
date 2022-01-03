@@ -9,6 +9,9 @@ import IconProfile from './ic_user.svg';
 import IconProfileAktif from './ic_user_aktif.svg';
 import IconChat from './ic_chat.svg';
 import IconChatAktif from './ic_chat_aktif.svg';
+import IconBayar from './ic_bayar.svg';
+import IconTopup from './ic_topup.svg';
+import IconRiwayat from './ic_riwayat.svg';
 
 export {
   ArrowLeft,
@@ -22,4 +25,7 @@ export {
   IconProfileAktif,
   IconChat,
   IconChatAktif,
+  IconBayar,
+  IconTopup,
+  IconRiwayat,
 };

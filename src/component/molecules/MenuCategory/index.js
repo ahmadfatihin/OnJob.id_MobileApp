@@ -6,8 +6,8 @@ import {colors} from '../../../utils';
 const MenuCategory = () => {
   return (
     <View style={styles.container}>
-      <Image source={Beliin} />
-      <Text>Menu Category</Text>
+      <Image source={Beliin} style={styles.images} />
+      <Text style={styles.text}>Menu Category</Text>
     </View>
   );
 };
@@ -19,5 +19,11 @@ const styles = StyleSheet.create({
     padding: 12,
     alignSelf: 'flex-start',
     backgroundColor: colors.grey,
+  },
+  images: {
+    marginBottom: 9,
+  },
+  text: {
+    fontFamily: 'Poppins-Medium',
   },
 });
